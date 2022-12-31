@@ -86,7 +86,7 @@ import styled from "styled-components";
 export const FooterWrapper = styled.div`
   position: relative;
   background-color: transparent;
-  padding: 80px 0;
+  padding-bottom: 44px;
 `;
 
 export const FooterTitle = styled.div`

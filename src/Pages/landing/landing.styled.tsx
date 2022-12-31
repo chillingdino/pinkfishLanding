@@ -10,9 +10,7 @@ export const LandingWrapper = styled.div`
   }
 `;
 
-export const WelcomeWrapper = styled.div`
-  min-height: 100vh;
-`;
+
 
 export const IntroWrapper = styled.div`
   /* background: url(${introBG}); */
@@ -20,9 +18,30 @@ export const IntroWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 124px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 44px;
+  }
+`;
+export const ArrowDiv = styled.div`
+  /* background: url(${introBG}); */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .arrow{
+    color: white;
+    font-size: 56px; 
+    
+  }
+  transition: all 1s;
+  opacity: 0;
+  transform: scale(0);
+ 
 `;
 
+export const WelcomeWrapper = styled.div`
+  min-height: calc(100vh - 64px);
+`;
 export const IntroTitleWrapper = styled.div`
   transition: all 1s;
   opacity: 0;
