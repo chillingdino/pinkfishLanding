@@ -8,6 +8,7 @@ export const LandingWrapper = styled.div`
   @media screen and (max-width: 768px) {
     background: linear-gradient(270deg, #FFFDD3 0%, #CED5F2 25%, #CED5F2 75%, #FFFDD3 100%);
   }
+  min-height: -webkit-fill-available;
 `;
 
 
@@ -40,7 +41,8 @@ export const ArrowDiv = styled.div`
 `;
 
 export const WelcomeWrapper = styled.div`
-  min-height: calc(100vh - 64px);
+  /*min-height: calc(100vh - 64px);*/
+  height:calc(var(--vh, 1vh) * 100 - 64px);
 `;
 export const IntroTitleWrapper = styled.div`
   transition: all 1s;
